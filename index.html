@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Not A Suspicious Website</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage fixed header and footer." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fixed, header,footer, absolute, positioned,css" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="assets/fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: 'Youth',arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header, #footer{
+		position:fixed;
+		height: 50px;
+		display:block;
+		width: 100%;
+		background: #333;
+		z-index:9;
+		text-align:center;
+		color: #f2f2f2;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+	#footer{
+		bottom:0px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu {
+		bottom: 80px;
+	}
+	#infoMenu li a {
+		color: #fff;
+		z-index: 999;
+	}
+
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+
+<div id="header"></div>
+<div id="footer"></div>
+
+<div id="fullpage">
+	<div class="section" id="section0">
+		<div class="intro">
+			<h1>Oh.</h1>
+			<p>Did you open this website because I told you so? Thank you.</p>
+		</div>
+	</div>
+    <div class="section" id="section1">
+		<div class="intro">
+			<h1>Truth is, there is nothing to test here.</h1>
+			<p>But keep scrolling. You might find something here.</p>
+		</div>
+	</div>
+    <div class="section" id="section2">
+		<div class="intro">
+            <h1>I was disbelief</h1>
+			<p>I'm looking for someone, but maybe I will never be able to find him.
+                I always thought he is somewhere, out of my reach. Maybe he's not even exists?
+            </p>
+		</div>
+	</div>
+	<div class="section" id="section3">
+	    <div class="slide" id="slide1">
+			<div class="intro">
+				<h1>But wait...</h1>
+				<p>
+					It must be a coincidence. Because my husband-to-be are supposed to be here.
+                    And I'm looking for him, for so many years of waiting game.<br>
+				</p>
+			</div>
+		</div>
+
+	    <div class="slide" id="slide2">
+			<div class="intro">
+				<h1>It's him! I finally found him.</h1>
+                <p class="wtf">He's really pretty and soft spoken.
+                <br>
+                He'll stroke my hair and look at me into my eyes.
+                <br>
+                You'll know him when you see him the way he look at me.
+                <br>
+                He'll whisper me things all girls will be jealous for.
+                <br>
+                He'll answers all my questions, no matter how silly it is.
+                <br>
+                Lucky? Guess I've spent all my lucks all the way here.
+                </p>
+			</div>
+		</div>
+
+	</div>
+	<div class="section" id="section4">
+		<div class="intro">
+            <h1>It's happiness beyond my will.</h1>
+			<p class="wtf">I'm both forever glad and grateful to have this chance.<br>
+                To meet him.
+                To be with him.
+                To spend the rest of my life with him.
+                To be someone that is wake up next to him.
+            </p>
+		</div>
+	</div>
+    <div class="section" id="section5">
+		<div class="intro">
+            <h1>Thank you. Thank you!</h1>
+			<p>I can't promise you anything because road is tough and love maybe not enough.But I'll promise you I'll be there and we can down this road together.<br>
+                Hopefully, forever.<br>
+                Thank you for taking my hand and chose me as your partner.
+            </p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="assets/fullpage.min.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        anchors: ['firstPage', 'secondPage', '3rdPage'],
+        sectionsColor: ['#333333', '#1BBC9B', '#7E8F7C'],
+        css3: true
+    });
+</script>
+
+</body>
+</html>
