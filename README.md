@@ -1,6 +1,8 @@
 # Not Suspicious
 
-It's just a love letter I made for my fiancée, you're free to contribute/change the content.
+It's just a love letter I made for my fiancée (now he is my husband! hehe), you're free to contribute/change the content.
+
+See how it runs: https://notsuspicious.pages.dev/
 
 ## Installation
 
